@@ -1,0 +1,64 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-1{
+  display: flex;
+  gap: 24px;
+  margin: 16px;
+}
+
+.section-1 input, .firstName, .lastName ,.section-2 input{
+  background-color: rgba(129, 127, 127,0.2);
+  border: 2px solid rgba(129, 127, 127,0.3);
+  padding: 8px;
+}
+
+.section-1 #AddOrUpdate{
+  padding: 6px;
+  width: 64px;
+  height: 32px;
+  border: 3px solid blueviolet;
+  color: blueviolet;
+  background-color: #ffff;
+  text-align: center;
+}
+
+.section-2{
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+}
+
+#table td{
+  padding: 8px;
+}
+
+#editBtn,#deleteBtn{
+  padding: 6px;
+  width: 64px;
+  height: 32px;
+  color: #ffff;
+  border-radius: 8px;
+  border: none;
+  font-weight: bolder;
+  font-size: medium;
+}
+#editBtn{
+  background-color: rgb(80, 212, 28);
+}
+#deleteBtn{
+  background-color: red;
+}
+
+:disabled{
+  background-color: rgb(92, 240, 240);
+}
