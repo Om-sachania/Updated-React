@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section-1{
+    /* border: 2px solid red; */
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-controls{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid red; */
+}
+
+
+/*Tags And OverView........................*/
+.overview-div{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}
+
+.item-container{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.tags-div{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* border: 2px solid red; */
+    column-gap: 36px;
+}
+
+.tag-description-div{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding-left: 20px;
+}
+
+.tag-category-div-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag-category-div ul{
+    margin-left: 36px;
+}
+
+.tagLi-Div{
+    display: flex;
+    gap: 24px;
+}
+
+.tagLi-Div p{
+    font-size: 36px;
+}
+
+/*DROP-DOWN CSS STYLE*/
+/* Container to wrap the button and the dropdown */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the Menu button */
+.menu-button {
+    padding: 0px 2px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    /* border: 2px solid black; */
+}
+
+/* Initially hide the dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it directly below the button */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Style for the list inside the dropdown */
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.dropdown li:hover {
+    background-color: #f1f1f1; /* Highlight option on hover */
+}
+
+/* Show the dropdown when hovering over the button */
+.menu-container:hover .dropdown {
+    display: block;
+}

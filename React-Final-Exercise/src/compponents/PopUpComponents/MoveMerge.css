@@ -1,0 +1,188 @@
+/* Basic styles for the popup container */
+.moveMergeModel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+/* Content of the popup */
+.moveMergeModel-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 60%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section 1 - Header */
+.moveMerge-section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.moveMerge-section-1 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.moveMerge-section-1 .close {
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+}
+
+.moveMerge-section-1 .close:hover {
+    color: #333;
+}
+
+/* Section 2 - Form fields */
+.moveMerge-section-2 {
+    margin-top: 20px;
+}
+
+.moveMerge-section-2 label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.moveMerge-section-2 select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* .moveMerge-section-2 .hover-list ul.main {
+    list-style: none;
+    padding-left: 0;
+}
+
+.moveMerge-section-2 .hover-list ul.main li {
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.moveMerge-section-2 .hover-list ul.main li:hover {
+    background-color: #eaeaea;
+}
+
+.moveMerge-section-2 .nested {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.moveMerge-section-2 .parent:hover .nested {
+    display: block;
+} */
+
+.main {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.main > li {
+    cursor: pointer;
+}
+
+.nested {
+    display: none;
+    padding-left: 20px; 
+}
+
+.parent:hover > .nested {
+    display: block;
+}
+
+.main li {
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.main li:hover {
+    background-color: #eaeaea;
+}
+
+/* Section 3 - Buttons */
+.moveMerge-section-3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.moveMerge-section-3 button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.moveMerge-section-3 button:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Specific styles for the parent category section */
+.moveMerge-parentCategory {
+    padding: 10px 0;
+}
+
+/* Style the span where the selected category is displayed */
+.moveMerge-parentCategory span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Style for the target category select box */
+.moveMerge-targetCategory select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Hover and focus effects for the selects */
+.moveMerge-targetCategory select:focus,
+.moveMerge-parentCategory select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
