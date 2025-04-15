@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 100vh;
+}
+.clock{
+    height: 40vh;
+    width: 45vw;
+    border: 2px solid rgb(247, 244, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    color: rgb(85, 214, 37);
+    background-color: black;
+}
+
+.time{
+    /* border: 2px solid blue; */
+    height: 150px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.hoursMins{
+    font-size: 120px;
+    /* border: 2px solid palegreen; */
+}
+
+.seconds{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    height: 80px;
+    justify-content: space-between;
+}
