@@ -1,0 +1,62 @@
+#main{
+  height: 100vh;
+}
+
+#section-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 16px;
+}
+
+#section-1 input, #firstName, #lastName ,#section-2 input{
+  background-color: rgba(129, 127, 127,0.2);
+  border: 2px solid rgba(129, 127, 127,0.3);
+  padding: 8px;
+}
+
+#section-1 #add, #update{
+  padding: 6px;
+  width: 64px;
+  height: 32px;
+  border: 3px solid blueviolet;
+  color: blueviolet;
+  background-color: #ffff;
+  text-align: center;
+}
+
+.disabled{
+  display: none;
+}
+
+#section-2{
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+}
+
+#table td{
+  padding: 8px;
+}
+
+.EditBtn,.DeleteBtn{
+  padding: 6px;
+  width: 64px;
+  height: 32px;
+  color: #ffff;
+  border-radius: 8px;
+  border: none;
+  font-weight: bolder;
+  font-size: medium;
+}
+.EditBtn{
+  background-color: rgb(80, 212, 28);
+}
+.DeleteBtn{
+  background-color: red;
+}
+
+:disabled{
+  background-color: rgb(105, 138, 138);
+}
