@@ -1,0 +1,44 @@
+#main{
+  border: 2px solid black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock{
+  border: 2px solid blue;
+  height: 500px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(85, 214, 37);
+  background-color: black;
+}
+
+.displayTime{
+  font-size: 150px;
+  display: flex;
+  /* border: 1px solid green; */
+  align-items: center;
+}
+
+.timeSectionTwo{
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  justify-content: space-between;
+  height: 90px;
+  margin-left: 8px;
+}
+
+.displayDay{
+  font-size: 28px;
+}
+
+.displayDate{
+  font-size: 24px;
+}
