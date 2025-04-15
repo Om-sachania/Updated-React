@@ -1,0 +1,24 @@
+body{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logOutBtn{
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(72, 165, 236);
+    color: white
+}
